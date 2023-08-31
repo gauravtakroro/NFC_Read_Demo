@@ -1,0 +1,15 @@
+<resources>
+<!-- Base application theme. -->
+<style name="Theme.NFC_Read_Demo" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:colorPrimaryDark">@color/black_background</item>
+ </style>
+
+<!-- Item Base Style -->
+<style name="TextItem" parent="android:Theme.Material.Light.NoActionBar">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">0dp</item>
+    <item name="android:fontFamily">@font/lato_black</item>
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:gravity">center</item>
+</style>
+</resources>
