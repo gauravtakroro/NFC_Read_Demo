@@ -3,4 +3,9 @@
     <color name="black_background">#000000</color>
     <color name="button_background">#007aff</color>
     <color name="gray_background">#aaaaaa</color>
+    <color name="primaryBlueColor">#007aff</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorOverlayBg">#42000000</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGray">#aaaaaa</color>
 </resources>

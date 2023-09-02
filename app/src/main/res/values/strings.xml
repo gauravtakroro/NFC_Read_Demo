@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">NFC Read Demo</string>
+    <string name="welcome_text">Welcome to NFC Read Demo</string>
+    <string name="tap_nfc_button_text">Tap Here to Scan NFC Card</string>
+    <string name="ready_to_scan">Ready to Scan</string>
+    <string name="hold_card_message">Hold card upright behind top of device to scan</string>
+    <string name="cancel">Cancel</string>
+    <string name="okay">Okay</string>
+    <string name="error">Error</string>
+    <string name="nfc_not_supported_for_this_device">NFC not supported for this device.</string>
+    <string name="nfc_not_enable_for_this_device">NFC not enabled, please turn on the NFC.</string>
+    <string name="enable">Enable</string>
+    <string name="no_nfc_card_scanned_yet">No NFC card scanned yet.</string>
+    <string name="this_is_not_valid_card_please_another">this is not valid card please scan another nfc card.</string>
 </resources>

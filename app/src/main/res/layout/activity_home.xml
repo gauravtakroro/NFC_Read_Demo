@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/rlGolfCourse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.golfCourse.GolfCourseActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/home_ui_center_icon_width"
+            android:layout_height="@dimen/home_ui_center_icon_height"
+            android:src="@drawable/ic_nfc"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_between_views"
+            android:paddingHorizontal="@dimen/margin_activity_ui"
+            android:textStyle="bold"
+            android:text="@string/welcome_text"
+            android:textColor="@color/black_background"
+            android:textSize="@dimen/title_text_size" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNFCStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_nfc_status"
+            android:paddingHorizontal="@dimen/margin_activity_ui"
+            android:text="@string/no_nfc_card_scanned_yet"
+            android:textColor="@color/black_background"
+            android:textSize="@dimen/description_text_size"
+            />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_nfc_scan"
+        android:layout_width="match_parent"
+        android:textAllCaps="false"
+        android:textSize="@dimen/button_text_size"
+        android:textColor="@color/colorWhite"
+        android:text="@string/tap_nfc_button_text"
+        android:layout_marginBottom="@dimen/margin_button"
+        android:background="@color/button_background"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginHorizontal="@dimen/margin_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+         />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/viewOuterNfcScanBottomSheetView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorOverlayBg"
+        app:behavior_peekHeight="0dp"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <io.gauravtak.nfc_read_demo.views.NFCScanBottomSheetView
+            android:id="@+id/nfcScanBottomSheetView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
